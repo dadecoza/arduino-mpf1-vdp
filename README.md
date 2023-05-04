@@ -135,4 +135,5 @@ See the complete demo listing <a href="https://github.com/dadecoza/arduino-mpf1-
 * Excelent video on how to use WinCupl and defining logic for GAL/PLD chips ... https://www.youtube.com/watch?v=fo_WlA-kVRc
 * z80-asm assembler ... http://wwwhomes.uni-bielefeld.de/achim/z80-asm.html
 * Arduino direct port manipulation ... https://docs.arduino.cc/hacking/software/PortManipulation
+* In my first photo I no longer use the Arduino Uno board but rather have the Atmega328 socketed on proto board next to the GAL20V8, this is how you use the 328 MCU on it's own ... https://docs.arduino.cc/built-in-examples/arduino-isp/ArduinoToBreadboard
 
