@@ -46,7 +46,7 @@ VDP     PUSH    BC              ; start of VDP subroutine ... copy BC to the sta
         LD      B, 50           ; load 50 into the B register for a delay loop
 VDPD1   DJNZ    VDPD1           ; do the delay loop so that the VDP microcontroller has some time to do its thing
         LD      A, (VDPB)       ; load the byte we want to load back into the accumulator 
-        RRA                     ; rotate right ... wewantt to get to the high nibble
+        RRA                     ; rotate right ... we want to get to the high nibble
         RRA                     ; rotate some more
         RRA                     ; and again
         RRA                     ; yay we made it
@@ -57,7 +57,7 @@ VDPD2   DJNZ    VDPD2           ; loopy loop
         LD      B, $0F          ; bitmask to get rid of the high nibble leaving only the lower
         AND     B               ; apply the bitmask to the accumulator
         OUT     (C), A          ; write the low nibble to the VDP
-        LD      B, 200          ; final delay loop ... if we weren't so lazy wecould havee implementedd an ACK signal
+        LD      B, 200          ; final delay loop ... if we weren't so lazy we could have implementedd an ACK signal
 VDPD3   DJNZ    VDPD3           ; last loopy loop
         POP     BC              ; recover BC
         RET                     ; return from subroutine
