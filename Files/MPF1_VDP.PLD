@@ -1,0 +1,43 @@
+Name     MPF-1 Video ;
+PartNo   00 ;
+Date     2023/04/18 ;
+Revision 01 ;
+Designer Johannes Le Roux ;
+Company  Private ;
+Assembly None ;
+Location  ;
+Device   g20v8a ;
+
+
+/**
+CLK    1    24 VCC
+D0     2    23 NC
+D1     3    22 Q3
+D2     4    21 Q2
+D3     5    20 Q1
+A6     6    19 Q0
+A7     7    18 VIDEO_EN
+/WR    8    17 NC 
+/IOREQ 9    16 NC
+NC     10   15 NC
+NC     11   14 NC
+GND    12   13 /OE
+**/
+
+/** Inputs **/
+Pin 1 = CLK;
+Pin [2..5] = [D0..3];
+Pin [6..7] = [A6..A7];
+Pin 8 = !WR;
+Pin 9 = !IOREQ;
+
+/** Outputs **/
+Pin [19..22] = [Q0..3];
+Pin 18 = VIDEO_EN;
+
+/** Logic Equations **/
+VIDEO_EN = IOREQ & WR & A6 & A7;
+Q0.d = D0;
+Q1.d = D1;
+Q2.d = D2;
+Q3.d = D3;
