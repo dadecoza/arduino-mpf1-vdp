@@ -11,7 +11,7 @@
 * Programmer for the GAL20V8. The popular TL866 works well
 ### Software
 * The Arduino IDE
-* WinCupl (optional if you want to change the GAL20V8 pin assignments)
+* WinCupl (only if you want to change the GAL20V8 pin assignments)
 * MiniPro Programmer software (in the case of the TL866)
 
 ## The circuit
