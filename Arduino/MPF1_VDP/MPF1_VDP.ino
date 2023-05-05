@@ -106,6 +106,9 @@ void do_command(unsigned int b) {
         case 4:
           TV.select_font(font8x8ext);
           break;
+        case 5:
+          TV.select_font(bescii8x8);
+          break;
         default:
           TV.select_font(font6x8);
           break;
