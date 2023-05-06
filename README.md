@@ -76,6 +76,7 @@ See the complete demo listing <a href="https://github.com/dadecoza/arduino-mpf1-
 0x1B, 0x2, 0x2  ; font6x8
 0x1B, 0x2, 0x3  ; font8x8
 0x1B, 0x2, 0x4  ; font8x8ext
+0x1B, 0x2, 0x5  ; game sprites https://github.com/damianvila/font-bescii
 ```
 ### Draw a line
 * Draw a line from 5,5 (x,y) and ending at 20, 20
